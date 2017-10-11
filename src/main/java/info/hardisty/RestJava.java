@@ -5,12 +5,15 @@ import info.hardisty.resource.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 
+import java.util.Arrays;
+
 public class RestJava extends Application<RestJavaConfiguration> {
 
 
     public static void main(String[] args) throws Exception {
         System.out.println("waka wooooops");
-        new RestJava().run(args);
+        System.out.println("args = " + Arrays.toString(args));
+        new RestJava().run(new String[] {"server"});
     }
 
     @Override
