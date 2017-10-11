@@ -1,4 +1,4 @@
-package com.kishan.restjava;
+package info.hardisty;
 
 import io.dropwizard.Configuration;
 
