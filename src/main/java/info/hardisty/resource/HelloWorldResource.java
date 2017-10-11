@@ -16,7 +16,7 @@ public class HelloWorldResource {
     @GET
     @Timed
     public String sayHello(@QueryParam("name") Optional<String> name) {
-        return String.format("Hello world %s", name.orElse("kishan"));
+        return String.format("Hello world %s", name.orElse("Frank"));
     }
 
 }
