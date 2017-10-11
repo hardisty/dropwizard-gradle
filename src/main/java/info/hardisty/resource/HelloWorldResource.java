@@ -1,4 +1,4 @@
-package com.kishan.restjava.resource;
+package info.hardisty.resource;
 
 import com.codahale.metrics.annotation.Timed;
 

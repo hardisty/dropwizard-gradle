@@ -1,4 +1,4 @@
-package com.kishan.restjava.health;
+package info.hardisty.health;
 
 import com.codahale.metrics.health.HealthCheck;
 

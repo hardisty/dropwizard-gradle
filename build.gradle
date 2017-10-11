@@ -11,6 +11,7 @@ group 'info.hardisty.dropwizard'
 description 'Sample Dropwizard REST Stub'
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'application'
 
 sourceCompatibility = 1.8
@@ -29,11 +30,11 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
-mainClassName = 'com.kishan.restjava.RestJava'
+mainClassName = 'info.hardisty.RestJava'
 
-run {
-    args = ['server', 'config.yml']
-}
+//run {
+///    args = ['server', 'config.yml']
+//}
 
 shadowJar {
     mergeServiceFiles()
@@ -48,5 +49,5 @@ shadowJar {
         attributes 'Created-By': 'Gradle ' + gradle.gradleVersion
         attributes 'Main-Class': mainClassName
     }
-    archiveName 'sample-dropwizard-rest-stub.jar'
+    archiveName 'dropwizard-rest.jar'
 }
