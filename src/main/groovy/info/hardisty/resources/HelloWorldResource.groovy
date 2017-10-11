@@ -11,11 +11,11 @@ import java.util.Optional;
 
 @Path("hello-world")
 @Produces(MediaType.APPLICATION_JSON)
-public class HelloWorldResource {
+class HelloWorldResource {
 
     @GET
     @Timed
-    public String sayHello(@QueryParam("name") Optional<String> name) {
+    String sayHello(@QueryParam("name") Optional<String> name) {
         return String.format("Hello world %s", name.orElse("Frank"));
     }
 
