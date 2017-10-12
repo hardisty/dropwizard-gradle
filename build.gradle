@@ -10,9 +10,10 @@ version '1.0-SNAPSHOT'
 group 'info.hardisty.dropwizard'
 description 'Sample Dropwizard REST Stub'
 
-apply plugin: 'java'
+//apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'application'
+apply plugin: 'codenarc'
 
 sourceCompatibility = 1.8
 
@@ -50,4 +51,8 @@ shadowJar {
         attributes 'Main-Class': mainClassName
     }
     archiveName 'dropwizard-rest.jar'
+}
+
+codenarcMain {
+    configFile file('src/config/codenarc-main.rules')
 }
