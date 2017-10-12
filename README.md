@@ -1,6 +1,6 @@
 # Dropwizard + Gradle + Groovy = &hearts;
 
-[![Build Status](https://travis-ci.org/hardistygithub/dropwizard-gradle.svg?branch=master)](https://travis-ci.org/hardistygithub/dropwizard-gradle)
+[![Build Status](https://travis-ci.org/hardisty/dropwizard-gradle.svg?branch=master)](https://travis-ci.org/hardistygithub/dropwizard-gradle)
 
 Minimal example of getting Dropwizard going with Gradle and Groovy.
 
