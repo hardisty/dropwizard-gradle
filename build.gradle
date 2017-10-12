@@ -8,7 +8,7 @@ plugins {
 
 version '1.0-SNAPSHOT'
 group 'info.hardisty.dropwizard'
-description 'Sample Dropwizard REST Stub'
+description 'Sample Dropwizard REST Stub with Groovy'
 
 //apply plugin: 'java'
 apply plugin: 'groovy'
@@ -18,7 +18,7 @@ apply plugin: 'codenarc'
 sourceCompatibility = 1.8
 
 ext {
-    dropwizardVersion = '1.0.5'
+    dropwizardVersion = '1.2.0'
 }
 
 repositories {

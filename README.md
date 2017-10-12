@@ -5,7 +5,7 @@
 Minimal example of getting Dropwizard going with Gradle and Groovy.
 
 # Dropwizard version
-1.0.5
+1.2.0
 
 # Build
 
