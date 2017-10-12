@@ -9,8 +9,8 @@ env:
 jdk:
   - openjdk8
 script:
-  - ./gradlew oneJar
-  - docker build -t kishanb/dropwizard-gradle:1.0.0 .
+  - ./gradlew runShadow
+  - docker build -t hardisty/dropwizard-gradle:1.0.0 .
 after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker push kishanb/dropwizard-gradle:1.0.0
+  - docker push hardisty/dropwizard-gradle:1.0.0
