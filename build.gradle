@@ -31,7 +31,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
-mainClassName = 'info.hardisty.RestJava'
+mainClassName = 'info.hardisty.RestGroovy'
 
 //run {
 ///    args = ['server', 'config.yml']

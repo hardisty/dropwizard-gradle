@@ -3,16 +3,17 @@ package info.hardisty
 import info.hardisty.health.RestGroovyHealthCheck
 import info.hardisty.resource.HelloWorldResource
 import io.dropwizard.Application
+import io.dropwizard.Configuration
 import io.dropwizard.setup.Environment
 
-class RestGroovy extends Application<RestGroovyConfiguration> {
+class RestGroovy extends Application<Configuration> {
 
     static void main(String[] args) throws Exception {
-        new RestGroovy().run(['server'])
+        new RestGroovy().run('server')
     }
 
     @Override
-    void run(RestGroovyConfiguration configuration, Environment environment) throws Exception {
+    void run(Configuration configuration, Environment environment) throws Exception {
         registerResources(environment)
         registerHealthChecks(environment)
     }
